@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.itunes_search.module.search.viewModel.SearchListViewModel"/>
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cl_rootView_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:fitsSystemWindows="true"
+            app:elevation="@dimen/spacing_0"
+            app:expanded="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/colorWhite"
+                app:layout_scrollFlags="snap|exitUntilCollapsed">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:fitsSystemWindows="true"
+                    app:contentInsetStart="@dimen/spacing_0"
+                    app:layout_collapseMode="pin">
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_10"
+                    android:layout_marginStart="@dimen/spacing_20"
+                    android:layout_marginEnd="@dimen/spacing_20"
+                    android:layout_marginBottom="@dimen/spacing_10"
+                    android:background="@drawable/background_search_view"
+                    android:paddingStart="-2dp"
+                    android:paddingEnd="@dimen/spacing_0"
+                    android:theme="@style/AppSearchView"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@color/colorGrey"
+                    app:queryHint="搜尋歌手" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_2"
+            android:background="@color/colorBackground"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/spacing_120"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <include
+            android:id="@+id/cover_page_search"
+            layout="@layout/cover_page"
+            android:visibility="gone"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
