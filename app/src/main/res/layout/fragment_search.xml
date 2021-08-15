@@ -55,7 +55,7 @@
                     android:theme="@style/AppSearchView"
                     app:iconifiedByDefault="false"
                     app:queryBackground="@color/colorGrey"
-                    app:queryHint="搜尋歌手" />
+                    app:queryHint="@string/search_hints" />
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>
 

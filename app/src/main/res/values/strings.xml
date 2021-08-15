@@ -10,10 +10,10 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     
-    <string name="main_search_hints">搜尋歌手</string>
+    <string name="search_hints">搜尋藝術家姓名或曲目名稱</string>
     <string name="cover_page_title">上方搜尋欄輸入文字</string>
 
     <!-- Search Detail -->
-    <string name="artist_name">藝術家姓名: $%s</string>
-    <string name="track_name">曲目名稱: $%s</string>
+    <string name="artist_name">藝術家姓名: %s</string>
+    <string name="track_name">曲目名稱: %s</string>
 </resources>
