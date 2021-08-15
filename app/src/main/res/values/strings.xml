@@ -12,4 +12,8 @@
     
     <string name="main_search_hints">搜尋歌手</string>
     <string name="cover_page_title">上方搜尋欄輸入文字</string>
+
+    <!-- Search Detail -->
+    <string name="artist_name">藝術家姓名: $%s</string>
+    <string name="track_name">曲目名稱: $%s</string>
 </resources>

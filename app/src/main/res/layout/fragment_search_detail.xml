@@ -33,11 +33,11 @@
             android:layout_below="@+id/iv_artist"
             android:layout_marginTop="@dimen/spacing_20"
             android:layout_marginStart="@dimen/spacing_20"
-            android:text="@{resultModel.artistName}"
+            android:text="@{String.format(@string/artist_name, resultModel.artistName)}"
             android:textSize="@dimen/font_size12"
             android:textColor="@color/textBlack0"
             android:textStyle="bold"
-            tools:text="Shakira" />
+            tools:text="藝術家姓名: Shakira" />
 
         <TextView
             android:id="@+id/tv_track_name"
@@ -46,10 +46,10 @@
             android:layout_below="@+id/tv_artist_name"
             android:layout_marginTop="@dimen/spacing_20"
             android:layout_marginStart="@dimen/spacing_20"
-            android:text="@{resultModel.trackName}"
+            android:text="@{String.format(@string/track_name, resultModel.trackName)}"
             android:textSize="@dimen/font_size12"
             android:textColor="@color/textBlack0"
-            tools:text="She wolf" />
+            tools:text="曲目名稱: She wolf" />
 
         <LinearLayout
             android:layout_width="match_parent"
